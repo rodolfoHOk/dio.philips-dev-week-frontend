@@ -16,53 +16,53 @@
 
 - Criação do projeto:
 
-    ng new philips-dev-week-angular
+        ng new philips-dev-week-angular
 
-    yarn install
+        yarn install
 
 - Adicionado o Material UI:
 
-    ng add @angular/material
+        ng add @angular/material
 
-    yarn install
+        yarn install
 
 - Inciando o projeto:
 
-    ng serve
+        ng serve
 
 - Geração do módulo ocorrencias incluindo o routing:
 
-    ng g m ocorrencias --routing
+        ng g m ocorrencias --routing
 
 - Geração do componente ocorrencias:
 
-    ng g c ocorrencias/ocorrencias
+        ng g c ocorrencias/ocorrencias
 
 - Geração do modelo regiao:
 
-    ng g interface /ocorrencias/model/regiao
+        ng g interface /ocorrencias/model/regiao
 
 - Geração do serviço regiao:
 
-    ng g service /ocorrencias/service/regiao
+        ng g service /ocorrencias/service/regiao
 
 ### fora da Live - Adicionando os outros modelos e serviços
 
 - Geração do modelo faixaEtaria:
 
-    ng g interface /ocorrencias/model/faixaEtaria
+        ng g interface /ocorrencias/model/faixaEtaria
 
 - Geração do serviços faixaEtaria:
 
-    ng g service /ocorrencias/service/faixaEtaria
+        ng g service /ocorrencias/service/faixaEtaria
 
 - Geração do modelo incidencias:
 
-    ng g interface /ocorrencias/model/incidencias
+        ng g interface /ocorrencias/model/incidencias
 
 - Geração do serviços incidencias:
 
-    ng g service /ocorrencias/service/incidencias
+        ng g service /ocorrencias/service/incidencias
 
 ## Repositorio do BackEnd
 
