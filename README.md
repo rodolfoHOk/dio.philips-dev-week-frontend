@@ -1,27 +1,69 @@
-# PhilipsDevWeekAngular
+# Projeto do FrontEnd da Philips Dev Week em Angular da Dio
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.5.
+> Projeto do FrontEnd desenvolvido durante o evento Philips Dev Week promovido pela Philips e pela DIO
 
-## Development server
+> Período: 08-03-2022 a 11-03-2022
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Tecnologias do FrontEnd
 
-## Code scaffolding
+- Linguagem : Typescript / Javascript
+- Framework : Angular
+- Biblioteca de Componentes: Angular Material (Material Design)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Comandos do Angular CLI
 
-## Build
+### na Live
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Criação do projeto:
 
-## Running unit tests
+    ng new philips-dev-week-angular
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+    yarn install
 
-## Running end-to-end tests
+- Adicionado o Material UI:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+    ng add @angular/material
 
-## Further help
+    yarn install
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- Inciando o projeto:
+
+    ng serve
+
+- Geração do módulo ocorrencias incluindo o routing:
+
+    ng g m ocorrencias --routing
+
+- Geração do componente ocorrencias:
+
+    ng g c ocorrencias/ocorrencias
+
+- Geração do modelo regiao:
+
+    ng g interface /ocorrencias/model/regiao
+
+- Geração do serviço regiao:
+
+    ng g service /ocorrencias/service/regiao
+
+### fora da Live - Adicionando os outros modelos e serviços
+
+- Geração do modelo faixaEtaria:
+
+    ng g interface /ocorrencias/model/faixaEtaria
+
+- Geração do serviços faixaEtaria:
+
+    ng g service /ocorrencias/service/faixaEtaria
+
+- Geração do modelo incidencias:
+
+    ng g interface /ocorrencias/model/incidencias
+
+- Geração do serviços incidencias:
+
+    ng g service /ocorrencias/service/incidencias
+
+## Repositorio do BackEnd
+
+https://github.com/rodolfoHOk/dio.philips-dev-week-backend
