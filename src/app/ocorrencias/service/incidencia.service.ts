@@ -1,21 +1,16 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
 import { Incidencia } from '../model/incidencia';
 
 @Injectable({
   providedIn: 'root',
 })
 export class IncidenciaService {
-  constructor() {}
+  constructor(private http: HttpClient) {}
 
-  listIncidencias(): Incidencia[] {
-    return [
-      {
-        id: 1,
-        regiaoId: 1,
-        mes: 5,
-        faixaId: 2,
-        qtdExames: 1,
-      },
-    ];
+  listIncidencias(): Observable<Incidencia[]> {
+    const url = '/api/incidencias';
+    return this.http.get<Incidencia[]>(url);
   }
 }
